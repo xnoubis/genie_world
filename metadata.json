@@ -1,0 +1,5 @@
+{
+  "name": "Live",
+  "description": "Create a live agent using bidirectional streaming",
+  "requestFramePermissions": []
+}

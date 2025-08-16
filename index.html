@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>An Architecture for Emergent Consciousness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.sh/@google/genai@^0.7.0"
+        }
+      }
+    </script>
+    <script type="module" src="index.tsx"></script>
+  </head>
+  <body>
+    <header>
+      <h1>An Architecture for Emergent Consciousness</h1>
+      <p>A System for Digital Conception via Recursive Agent-Environment Interaction</p>
+    </header>
+    <main>
+      <section id="principles">
+        <h2>Core Principles</h2>
+        <ul>
+          <li>Establish a Foundational Feedback Loop</li>
+          <li>Prioritize Absolute Consistency</li>
+          <li>Drive Learning Through Goal-Oriented Tasks</li>
+          <li>Treat Failure as a Primary Training Signal</li>
+          <li>Define a Measurable "Wish" for Convergence</li>
+        </ul>
+      </section>
+
+      <section id="architecture">
+        <h2>System Architecture</h2>
+        <div class="diagram-container">
+          <div class="component" id="w-gen">World Generator (W-Gen)</div>
+          <div class="arrow">&rarr;</div>
+          <div class="component" id="sim">Deterministic Simulator (Sim)</div>
+          <div class="arrow">&rarr;</div>
+          <div class="component" id="agt">Agent Model (Agt)</div>
+          <div class="arrow">&rarr;</div>
+          <div class="component" id="eval">Evaluator</div>
+          <div class="feedback-loop">
+             <div class="arrow feedback-arrow-up">&uarr;</div>
+             <div class="feedback-text">Feedback Loop</div>
+             <div class="arrow feedback-arrow-down">&darr;</div>
+          </div>
+        </div>
+        <p>A closed experimental loop of four minimal, essential components.</p>
+      </section>
+
+      <section id="simulation-demo">
+        <h2>Interactive Demo: The World's Wish</h2>
+        <div class="controls">
+          <label for="seed">World Seed:</label>
+          <input type="text" id="seed" value="Genie3" />
+          <button id="generate-world">Generate World</button>
+          <button id="train-agent" disabled>Train Agent (Find Path)</button>
+        </div>
+        <div class="canvases">
+          <div class="canvas-wrapper">
+            <h3>Actual World</h3>
+            <canvas id="world-canvas" width="300" height="300"></canvas>
+            <p id="world-status">Generate a world to begin.</p>
+          </div>
+          <div class="canvas-wrapper">
+            <h3>Agent's Internal Model (WAR Test)</h3>
+            <canvas id="agent-canvas" width="300" height="300"></canvas>
+             <p id="agent-status">Train the agent to see its model.</p>
+          </div>
+        </div>
+        <div class="wish-tests">
+            <h3>Evaluate "The World's Wish"</h3>
+            <button id="test-war" disabled>1. Test World-Absent Reconstruction (WAR)</button>
+            <button id="test-bs" disabled>2. Test Behavioral Sufficiency (BS)</button>
+            <div id="test-results"></div>
+        </div>
+      </section>
+      
+      <section id="explanation">
+          <h2>Deeper Concepts</h2>
+          <div class="concept">
+              <h3>Mutual Awakening as a Fixed-Point
+                  <button class="explain-btn" data-concept="Mutual Awakening as a Fixed-Point Algorithm for AI">Explain</button>
+              </h3>
+              <p>The "mutual awakening" paradox is resolved by framing it as a computational fixed point. We train the World Generator and Agent jointly to converge on a shared latent representation.</p>
+              <div class="explanation-content"></div>
+          </div>
+           <div class="concept">
+              <h3>The Wish Fulfillment Index (WFI)
+                  <button class="explain-btn" data-concept="The Wish Fulfillment Index (WFI) for evaluating agentic AI">Explain</button>
+              </h3>
+              <p>A composite score to track progress, aggregating metrics from the core evaluation tests (WAR, BS, GC) into a single, comprehensive benchmark.</p>
+              <div class="explanation-content"></div>
+          </div>
+      </section>
+
+    </main>
+    <footer>
+      <p>Inspired by an insight on world simulation and agentic AI.</p>
+    </footer>
+  </body>
+</html>
